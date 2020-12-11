@@ -1,7 +1,7 @@
 FROM golang:alpine as build
 
 WORKDIR /whalesay
-COPY ../image .
+COPY whalesay.go .
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o whalesay .
 
 FROM alpine:edge
