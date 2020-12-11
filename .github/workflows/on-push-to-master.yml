@@ -19,5 +19,6 @@ jobs:
         with:
           context: .
           file: ./image/Dockerfile
+          path: ./image
           push: true
           tags: nikovirtala/whalesay:latest
